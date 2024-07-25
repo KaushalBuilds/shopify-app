@@ -1,0 +1,29 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "481013c2b8bc9f5afa77f9bc1c21977b"
+name = "my-app"
+handle = "my-app-1373"
+application_url = "https://earning-afford-raid-iraq.trycloudflare.com"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+dev_store_url = "learnthemebuild.myshopify.com"
+include_config_on_deploy = true
+
+[access_scopes]
+# Learn more at https://shopify.dev/docs/apps/tools/cli/configuration#access_scopes
+scopes = "read_customers,read_merchant_managed_fulfillment_orders,read_orders,read_products,read_shipping,write_customers,write_merchant_managed_fulfillment_orders,write_orders,write_products,write_shipping"
+
+[auth]
+redirect_urls = [
+  "https://earning-afford-raid-iraq.trycloudflare.com/auth/callback",
+  "https://earning-afford-raid-iraq.trycloudflare.com/auth/shopify/callback",
+  "https://earning-afford-raid-iraq.trycloudflare.com/api/auth/callback"
+]
+
+[webhooks]
+api_version = "2024-07"
+
+[pos]
+embedded = false
